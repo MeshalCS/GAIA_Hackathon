@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Test Form</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" width="400" height="200">
+        <h2>Test</h2>
+        <form method="post">
+            <p>What type of room do you have?</p>
+            <input type="radio" name="room_type" value="1-bedroom"> 1-bedroom<br>
+            <input type="radio" name="room_type" value="2-living room"> 2-living room<br>
+            <input type="radio" name="room_type" value="3-hallway"> 3-hallway<br>
+            <input type="radio" name="room_type" value="4-kitchen"> 4-kitchen<br><br>
+           
+		
+		choose the design type : <br>    
+              <input type="checkbox" id="r" name="rustic" value="ru"/>    
+                 <label>RUSTIC</label> <br>    
+              <input type="checkbox" id="m" name="modern" value="mo" />    
+                 <label>MODERN</label> <br>    
+              <input type="checkbox" id="m" name="minimalist" value="mi"/>    
+                 <label>MINIMALIST</label> <br>  
+       	  <input type="checkbox" id="i" name="industrial" value="in"/>    
+                 <label>INDUSTRIAL</label>  
+		<input type="checkbox" id="c" name="classic" value="cl"/>    
+                 <label>CLASSIC</label>  <br><br>
+		
+		<p>What's the main color of the theme</p>
+		<select name="color_chooser">
+                <option value="design1">Black</option>
+                <option value="design2">White</option>
+		   <option value="design2">Grey</option>
+                <option value="design2">Blue</option>
+                <option value="design2">Red</option>
+                <option value="design2">Yellow</option>
+
+
+            </select><br><br>
+
+		
+          	  <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
